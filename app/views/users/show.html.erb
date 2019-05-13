@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @user.name %>
+</p>
+
+<p>
+  <strong>Fill murray:</strong>
+  <%= @user.fill_murray %>
+</p>
+
+<p>
+  <strong>Place cage:</strong>
+  <%= @user.place_cage %>
+</p>
+
+<p>
+  <strong>Custom header:</strong>
+  <%= @user.custom_header %>
+</p>
+
+<p>
+  <strong>Custom header text:</strong>
+  <%= @user.custom_header_text %>
+</p>
+
+<%= link_to 'Edit', edit_user_path(@user) %> |
+<%= link_to 'Back', users_path %>
