@@ -27,6 +27,8 @@ gem 'bcrypt', '~> 3.1.7'
 
 gem 'rack-cors'
 
+gem 'knock'
+
 gem 'rails_12factor', group: :production
 
 # Use Capistrano for deployment
