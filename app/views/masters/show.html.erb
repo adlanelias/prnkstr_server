@@ -20,5 +20,10 @@
   <%= @master.admin %>
 </p>
 
+<strong>Slaves:</strong>
+<% @master.users.each do |user| %>
+  <p><%= user.name %></p>
+<% end %>
+
 <%= link_to 'Edit', edit_master_path(@master) %> |
 <%= link_to 'Back', masters_path %>

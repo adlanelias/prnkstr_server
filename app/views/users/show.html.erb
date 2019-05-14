@@ -25,5 +25,10 @@
   <%= @user.custom_header_text %>
 </p>
 
+<p>
+  <strong>Master:</strong>
+  <%= @user.master.name %>
+</p>
+
 <%= link_to 'Edit', edit_user_path(@user) %> |
 <%= link_to 'Back', users_path %>
