@@ -26,9 +26,28 @@
 </p>
 
 <p>
+  <strong>Paragraph Background Hex Color:</strong>
+  <% if @user.paragraph_background == '' %>
+		n/a
+  <% else %>
+		<%= @user.paragraph_background %>
+  <% end %>
+</p>
+
+<p>
+  <strong>Paragraph Text Hex Color:</strong>
+  <% if @user.paragraph_color == '' %>
+		n/a
+  <% else %>
+		<%= @user.paragraph_color %>
+  <% end %>
+</p>
+
+<p>
   <strong>Master:</strong>
   <%= @user.master.name %>
 </p>
 
+<%= link_to 'Masters', masters_path %>
 <%= link_to 'Edit', edit_user_path(@user) %> |
 <%= link_to 'Back', users_path %>

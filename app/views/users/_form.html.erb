@@ -37,6 +37,21 @@
   </div>
 
   <div class="field">
+    <%= form.label :paragraph_background, "Paragraph Background Hex#" %>
+    <%= form.text_field :paragraph_background %>
+  </div>
+
+  <div class="field">
+    <%= form.label :paragraph_color, "Paragraph Text Hex#" %>
+    <%= form.text_field :paragraph_color %>
+  </div>
+
+  <div class="field">
+    <%= form.label :snap, "Snap 404 Page?" %>
+    <%= form.check_box :snap %>
+  </div>
+
+  <div class="field">
     <%= form.label :master_id %>
     <%= form.select :master_id, Master.pluck(:name, :id), :include_blank => true %>
   </div>

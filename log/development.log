@@ -2397,3 +2397,1429 @@ Migrating to RemoveSlaveIdFromMaster (20190514121019)
   ↳ /Users/thomashexton/.rvm/rubies/ruby-2.6.2/lib/ruby/gems/2.6.0/gems/rake-12.3.2/lib/rake/task.rb:273
   [1m[35m (2.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
   ↳ /Users/thomashexton/.rvm/gems/ruby-2.6.2/bin/annotate:23
+  [1m[35m (1.1ms)[0m  [1m[34mSELECT pg_try_advisory_lock(6946963019709413505)[0m
+  ↳ /Users/thomashexton/.rvm/rubies/ruby-2.6.2/lib/ruby/gems/2.6.0/gems/rake-12.3.2/lib/rake/task.rb:273
+  [1m[35m (2.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/thomashexton/.rvm/rubies/ruby-2.6.2/lib/ruby/gems/2.6.0/gems/rake-12.3.2/lib/rake/task.rb:273
+Migrating to AddSnapToUser (20190514125047)
+  [1m[35m (23.8ms)[0m  [1m[35mBEGIN[0m
+  ↳ /Users/thomashexton/.rvm/rubies/ruby-2.6.2/lib/ruby/gems/2.6.0/gems/rake-12.3.2/lib/rake/task.rb:273
+  [1m[35m (2.4ms)[0m  [1m[35mALTER TABLE "users" ADD "snap" boolean DEFAULT FALSE[0m
+  ↳ db/migrate/20190514125047_add_snap_to_user.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (1.5ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20190514125047"]]
+  ↳ /Users/thomashexton/.rvm/rubies/ruby-2.6.2/lib/ruby/gems/2.6.0/gems/rake-12.3.2/lib/rake/task.rb:273
+  [1m[35m (44.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /Users/thomashexton/.rvm/rubies/ruby-2.6.2/lib/ruby/gems/2.6.0/gems/rake-12.3.2/lib/rake/task.rb:273
+  [1m[36mActiveRecord::InternalMetadata Load (2.4ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ /Users/thomashexton/.rvm/rubies/ruby-2.6.2/lib/ruby/gems/2.6.0/gems/rake-12.3.2/lib/rake/task.rb:273
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ /Users/thomashexton/.rvm/rubies/ruby-2.6.2/lib/ruby/gems/2.6.0/gems/rake-12.3.2/lib/rake/task.rb:273
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /Users/thomashexton/.rvm/rubies/ruby-2.6.2/lib/ruby/gems/2.6.0/gems/rake-12.3.2/lib/rake/task.rb:273
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT pg_advisory_unlock(6946963019709413505)[0m
+  ↳ /Users/thomashexton/.rvm/rubies/ruby-2.6.2/lib/ruby/gems/2.6.0/gems/rake-12.3.2/lib/rake/task.rb:273
+  [1m[35m (12.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/thomashexton/.rvm/rubies/ruby-2.6.2/lib/ruby/gems/2.6.0/gems/rake-12.3.2/lib/rake/task.rb:273
+  [1m[35m (1.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/thomashexton/.rvm/gems/ruby-2.6.2/bin/annotate:23
+  [1m[35m (1.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/thomashexton/.rvm/rubies/ruby-2.6.2/lib/ruby/gems/2.6.0/gems/rake-12.3.2/lib/rake/task.rb:273
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/thomashexton/.rvm/rubies/ruby-2.6.2/lib/ruby/gems/2.6.0/gems/rake-12.3.2/lib/rake/task.rb:273
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/thomashexton/.rvm/rubies/ruby-2.6.2/lib/ruby/gems/2.6.0/gems/rake-12.3.2/lib/rake/task.rb:273
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT pg_try_advisory_lock(6946963019709413505)[0m
+  ↳ /Users/thomashexton/.rvm/rubies/ruby-2.6.2/lib/ruby/gems/2.6.0/gems/rake-12.3.2/lib/rake/task.rb:273
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/thomashexton/.rvm/rubies/ruby-2.6.2/lib/ruby/gems/2.6.0/gems/rake-12.3.2/lib/rake/task.rb:273
+Migrating to AddSnapToUser (20190514125047)
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ /Users/thomashexton/.rvm/rubies/ruby-2.6.2/lib/ruby/gems/2.6.0/gems/rake-12.3.2/lib/rake/task.rb:273
+  [1m[35m (1.5ms)[0m  [1m[35mALTER TABLE "users" DROP COLUMN "snap"[0m
+  ↳ /Users/thomashexton/.rvm/rubies/ruby-2.6.2/lib/ruby/gems/2.6.0/gems/rake-12.3.2/lib/rake/task.rb:273
+  [1m[36mActiveRecord::SchemaMigration Destroy (0.8ms)[0m  [1m[31mDELETE FROM "schema_migrations" WHERE "schema_migrations"."version" = $1[0m  [["version", "20190514125047"]]
+  ↳ /Users/thomashexton/.rvm/rubies/ruby-2.6.2/lib/ruby/gems/2.6.0/gems/rake-12.3.2/lib/rake/task.rb:273
+  [1m[35m (5.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /Users/thomashexton/.rvm/rubies/ruby-2.6.2/lib/ruby/gems/2.6.0/gems/rake-12.3.2/lib/rake/task.rb:273
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT pg_advisory_unlock(6946963019709413505)[0m
+  ↳ /Users/thomashexton/.rvm/rubies/ruby-2.6.2/lib/ruby/gems/2.6.0/gems/rake-12.3.2/lib/rake/task.rb:273
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/thomashexton/.rvm/rubies/ruby-2.6.2/lib/ruby/gems/2.6.0/gems/rake-12.3.2/lib/rake/task.rb:273
+  [1m[35m (1.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/thomashexton/.rvm/rubies/ruby-2.6.2/lib/ruby/gems/2.6.0/gems/rake-12.3.2/lib/rake/task.rb:273
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/thomashexton/.rvm/rubies/ruby-2.6.2/lib/ruby/gems/2.6.0/gems/rake-12.3.2/lib/rake/task.rb:273
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/thomashexton/.rvm/rubies/ruby-2.6.2/lib/ruby/gems/2.6.0/gems/rake-12.3.2/lib/rake/task.rb:273
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT pg_try_advisory_lock(6946963019709413505)[0m
+  ↳ /Users/thomashexton/.rvm/rubies/ruby-2.6.2/lib/ruby/gems/2.6.0/gems/rake-12.3.2/lib/rake/task.rb:273
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/thomashexton/.rvm/rubies/ruby-2.6.2/lib/ruby/gems/2.6.0/gems/rake-12.3.2/lib/rake/task.rb:273
+Migrating to RemoveSlaveIdFromMaster (20190514121019)
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ /Users/thomashexton/.rvm/rubies/ruby-2.6.2/lib/ruby/gems/2.6.0/gems/rake-12.3.2/lib/rake/task.rb:273
+  [1m[35m (2.8ms)[0m  [1m[35mALTER TABLE "masters" ADD "slave_id" integer[0m
+  ↳ /Users/thomashexton/.rvm/rubies/ruby-2.6.2/lib/ruby/gems/2.6.0/gems/rake-12.3.2/lib/rake/task.rb:273
+  [1m[36mActiveRecord::SchemaMigration Destroy (1.0ms)[0m  [1m[31mDELETE FROM "schema_migrations" WHERE "schema_migrations"."version" = $1[0m  [["version", "20190514121019"]]
+  ↳ /Users/thomashexton/.rvm/rubies/ruby-2.6.2/lib/ruby/gems/2.6.0/gems/rake-12.3.2/lib/rake/task.rb:273
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /Users/thomashexton/.rvm/rubies/ruby-2.6.2/lib/ruby/gems/2.6.0/gems/rake-12.3.2/lib/rake/task.rb:273
+Migrating to AddParagraphFeaturesToUser (20190514114107)
+  [1m[35m (0.5ms)[0m  [1m[35mBEGIN[0m
+  ↳ /Users/thomashexton/.rvm/rubies/ruby-2.6.2/lib/ruby/gems/2.6.0/gems/rake-12.3.2/lib/rake/task.rb:273
+  [1m[35m (1.3ms)[0m  [1m[35mALTER TABLE "users" DROP COLUMN "paragraph_color"[0m
+  ↳ /Users/thomashexton/.rvm/rubies/ruby-2.6.2/lib/ruby/gems/2.6.0/gems/rake-12.3.2/lib/rake/task.rb:273
+  [1m[35m (0.7ms)[0m  [1m[35mALTER TABLE "users" DROP COLUMN "paragraph_background"[0m
+  ↳ /Users/thomashexton/.rvm/rubies/ruby-2.6.2/lib/ruby/gems/2.6.0/gems/rake-12.3.2/lib/rake/task.rb:273
+  [1m[36mActiveRecord::SchemaMigration Destroy (1.4ms)[0m  [1m[31mDELETE FROM "schema_migrations" WHERE "schema_migrations"."version" = $1[0m  [["version", "20190514114107"]]
+  ↳ /Users/thomashexton/.rvm/rubies/ruby-2.6.2/lib/ruby/gems/2.6.0/gems/rake-12.3.2/lib/rake/task.rb:273
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /Users/thomashexton/.rvm/rubies/ruby-2.6.2/lib/ruby/gems/2.6.0/gems/rake-12.3.2/lib/rake/task.rb:273
+Migrating to AddMasterIdToUser (20190514005712)
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ /Users/thomashexton/.rvm/rubies/ruby-2.6.2/lib/ruby/gems/2.6.0/gems/rake-12.3.2/lib/rake/task.rb:273
+  [1m[35m (2.9ms)[0m  [1m[35mALTER TABLE "users" DROP COLUMN "master_id"[0m
+  ↳ /Users/thomashexton/.rvm/rubies/ruby-2.6.2/lib/ruby/gems/2.6.0/gems/rake-12.3.2/lib/rake/task.rb:273
+  [1m[36mActiveRecord::SchemaMigration Destroy (0.9ms)[0m  [1m[31mDELETE FROM "schema_migrations" WHERE "schema_migrations"."version" = $1[0m  [["version", "20190514005712"]]
+  ↳ /Users/thomashexton/.rvm/rubies/ruby-2.6.2/lib/ruby/gems/2.6.0/gems/rake-12.3.2/lib/rake/task.rb:273
+  [1m[35m (0.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /Users/thomashexton/.rvm/rubies/ruby-2.6.2/lib/ruby/gems/2.6.0/gems/rake-12.3.2/lib/rake/task.rb:273
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT pg_advisory_unlock(6946963019709413505)[0m
+  ↳ /Users/thomashexton/.rvm/rubies/ruby-2.6.2/lib/ruby/gems/2.6.0/gems/rake-12.3.2/lib/rake/task.rb:273
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/thomashexton/.rvm/rubies/ruby-2.6.2/lib/ruby/gems/2.6.0/gems/rake-12.3.2/lib/rake/task.rb:273
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT pg_try_advisory_lock(6946963019709413505)[0m
+  ↳ /Users/thomashexton/.rvm/rubies/ruby-2.6.2/lib/ruby/gems/2.6.0/gems/rake-12.3.2/lib/rake/task.rb:273
+  [1m[35m (1.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/thomashexton/.rvm/rubies/ruby-2.6.2/lib/ruby/gems/2.6.0/gems/rake-12.3.2/lib/rake/task.rb:273
+Migrating to AddMasterIdToUser (20190514005712)
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ /Users/thomashexton/.rvm/rubies/ruby-2.6.2/lib/ruby/gems/2.6.0/gems/rake-12.3.2/lib/rake/task.rb:273
+  [1m[35m (1.1ms)[0m  [1m[35mALTER TABLE "users" ADD "master_id" integer[0m
+  ↳ db/migrate/20190514005712_add_master_id_to_user.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (0.6ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20190514005712"]]
+  ↳ /Users/thomashexton/.rvm/rubies/ruby-2.6.2/lib/ruby/gems/2.6.0/gems/rake-12.3.2/lib/rake/task.rb:273
+  [1m[35m (0.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /Users/thomashexton/.rvm/rubies/ruby-2.6.2/lib/ruby/gems/2.6.0/gems/rake-12.3.2/lib/rake/task.rb:273
+Migrating to AddParagraphFeaturesToUser (20190514114107)
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ /Users/thomashexton/.rvm/rubies/ruby-2.6.2/lib/ruby/gems/2.6.0/gems/rake-12.3.2/lib/rake/task.rb:273
+  [1m[35m (1.1ms)[0m  [1m[35mALTER TABLE "users" ADD "paragraph_background" character varying DEFAULT ''[0m
+  ↳ db/migrate/20190514114107_add_paragraph_features_to_user.rb:3
+  [1m[35m (0.7ms)[0m  [1m[35mALTER TABLE "users" ADD "paragraph_color" character varying DEFAULT ''[0m
+  ↳ db/migrate/20190514114107_add_paragraph_features_to_user.rb:4
+  [1m[36mActiveRecord::SchemaMigration Create (0.7ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20190514114107"]]
+  ↳ /Users/thomashexton/.rvm/rubies/ruby-2.6.2/lib/ruby/gems/2.6.0/gems/rake-12.3.2/lib/rake/task.rb:273
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /Users/thomashexton/.rvm/rubies/ruby-2.6.2/lib/ruby/gems/2.6.0/gems/rake-12.3.2/lib/rake/task.rb:273
+Migrating to RemoveSlaveIdFromMaster (20190514121019)
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ /Users/thomashexton/.rvm/rubies/ruby-2.6.2/lib/ruby/gems/2.6.0/gems/rake-12.3.2/lib/rake/task.rb:273
+  [1m[35m (1.5ms)[0m  [1m[35mALTER TABLE "masters" DROP COLUMN "slave_id"[0m
+  ↳ db/migrate/20190514121019_remove_slave_id_from_master.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (1.0ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20190514121019"]]
+  ↳ /Users/thomashexton/.rvm/rubies/ruby-2.6.2/lib/ruby/gems/2.6.0/gems/rake-12.3.2/lib/rake/task.rb:273
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /Users/thomashexton/.rvm/rubies/ruby-2.6.2/lib/ruby/gems/2.6.0/gems/rake-12.3.2/lib/rake/task.rb:273
+Migrating to AddSnapToUser (20190514125047)
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ /Users/thomashexton/.rvm/rubies/ruby-2.6.2/lib/ruby/gems/2.6.0/gems/rake-12.3.2/lib/rake/task.rb:273
+  [1m[35m (1.1ms)[0m  [1m[35mALTER TABLE "users" ADD "snap" boolean DEFAULT FALSE[0m
+  ↳ db/migrate/20190514125047_add_snap_to_user.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (44.6ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20190514125047"]]
+  ↳ /Users/thomashexton/.rvm/rubies/ruby-2.6.2/lib/ruby/gems/2.6.0/gems/rake-12.3.2/lib/rake/task.rb:273
+  [1m[35m (1.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /Users/thomashexton/.rvm/rubies/ruby-2.6.2/lib/ruby/gems/2.6.0/gems/rake-12.3.2/lib/rake/task.rb:273
+  [1m[36mActiveRecord::InternalMetadata Load (1.9ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ /Users/thomashexton/.rvm/rubies/ruby-2.6.2/lib/ruby/gems/2.6.0/gems/rake-12.3.2/lib/rake/task.rb:273
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ /Users/thomashexton/.rvm/rubies/ruby-2.6.2/lib/ruby/gems/2.6.0/gems/rake-12.3.2/lib/rake/task.rb:273
+  [1m[35m (1.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /Users/thomashexton/.rvm/rubies/ruby-2.6.2/lib/ruby/gems/2.6.0/gems/rake-12.3.2/lib/rake/task.rb:273
+  [1m[35m (1.8ms)[0m  [1m[34mSELECT pg_advisory_unlock(6946963019709413505)[0m
+  ↳ /Users/thomashexton/.rvm/rubies/ruby-2.6.2/lib/ruby/gems/2.6.0/gems/rake-12.3.2/lib/rake/task.rb:273
+  [1m[35m (1.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/thomashexton/.rvm/rubies/ruby-2.6.2/lib/ruby/gems/2.6.0/gems/rake-12.3.2/lib/rake/task.rb:273
+  [1m[36mUser Load (8.9ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+Started GET "/" for ::1 at 2019-05-14 23:18:00 +1000
+  [1m[35m (1.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/thomashexton/.rvm/gems/ruby-2.6.2/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /Users/thomashexton/.rvm/gems/ruby-2.6.2/gems/railties-5.2.3/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/thomashexton/.rvm/gems/ruby-2.6.2/gems/railties-5.2.3/lib/rails/templates/rails/welcome/index.html.erb (2.8ms)
+Completed 200 OK in 6ms (Views: 4.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users" for ::1 at 2019-05-14 23:18:03 +1000
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (21.5ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:19
+  Rendered users/index.html.erb within layouts/application (57.9ms)
+Completed 200 OK in 98ms (Views: 53.8ms | ActiveRecord: 36.4ms)
+
+
+Started GET "/users/23/edit" for ::1 at 2019-05-14 23:18:06 +1000
+Processing by UsersController#edit as HTML
+  Parameters: {"id"=>"23"}
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 23], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:67
+  Rendering users/edit.html.erb within layouts/application
+  [1m[35m (1.1ms)[0m  [1m[34mSELECT "masters"."name", "masters"."id" FROM "masters"[0m
+  ↳ app/views/users/_form.html.erb:41
+  Rendered users/_form.html.erb (46.2ms)
+  Rendered users/edit.html.erb within layouts/application (48.4ms)
+Completed 200 OK in 112ms (Views: 43.3ms | ActiveRecord: 62.7ms)
+
+
+Started GET "/users/23/edit.json" for ::1 at 2019-05-14 23:18:18 +1000
+Processing by UsersController#edit as JSON
+  Parameters: {"id"=>"23"}
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 23], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:67
+Completed 406 Not Acceptable in 59ms (ActiveRecord: 1.0ms)
+
+
+  
+ActionController::UnknownFormat (UsersController#edit is missing a template for this request format and variant.
+
+request.formats: ["application/json"]
+request.variant: []):
+  
+actionpack (5.2.3) lib/action_controller/metal/implicit_render.rb:42:in `default_render'
+actionpack (5.2.3) lib/action_controller/metal/basic_implicit_render.rb:6:in `block in send_action'
+actionpack (5.2.3) lib/action_controller/metal/basic_implicit_render.rb:6:in `tap'
+actionpack (5.2.3) lib/action_controller/metal/basic_implicit_render.rb:6:in `send_action'
+actionpack (5.2.3) lib/abstract_controller/base.rb:194:in `process_action'
+actionpack (5.2.3) lib/action_controller/metal/rendering.rb:30:in `process_action'
+actionpack (5.2.3) lib/abstract_controller/callbacks.rb:42:in `block in process_action'
+activesupport (5.2.3) lib/active_support/callbacks.rb:132:in `run_callbacks'
+actionpack (5.2.3) lib/abstract_controller/callbacks.rb:41:in `process_action'
+actionpack (5.2.3) lib/action_controller/metal/rescue.rb:22:in `process_action'
+actionpack (5.2.3) lib/action_controller/metal/instrumentation.rb:34:in `block in process_action'
+activesupport (5.2.3) lib/active_support/notifications.rb:168:in `block in instrument'
+activesupport (5.2.3) lib/active_support/notifications/instrumenter.rb:23:in `instrument'
+activesupport (5.2.3) lib/active_support/notifications.rb:168:in `instrument'
+actionpack (5.2.3) lib/action_controller/metal/instrumentation.rb:32:in `process_action'
+actionpack (5.2.3) lib/action_controller/metal/params_wrapper.rb:256:in `process_action'
+activerecord (5.2.3) lib/active_record/railties/controller_runtime.rb:24:in `process_action'
+actionpack (5.2.3) lib/abstract_controller/base.rb:134:in `process'
+actionview (5.2.3) lib/action_view/rendering.rb:32:in `process'
+actionpack (5.2.3) lib/action_controller/metal.rb:191:in `dispatch'
+actionpack (5.2.3) lib/action_controller/metal.rb:252:in `dispatch'
+actionpack (5.2.3) lib/action_dispatch/routing/route_set.rb:52:in `dispatch'
+actionpack (5.2.3) lib/action_dispatch/routing/route_set.rb:34:in `serve'
+actionpack (5.2.3) lib/action_dispatch/journey/router.rb:52:in `block in serve'
+actionpack (5.2.3) lib/action_dispatch/journey/router.rb:35:in `each'
+actionpack (5.2.3) lib/action_dispatch/journey/router.rb:35:in `serve'
+actionpack (5.2.3) lib/action_dispatch/routing/route_set.rb:840:in `call'
+rack (2.0.7) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.0.7) lib/rack/etag.rb:25:in `call'
+rack (2.0.7) lib/rack/conditional_get.rb:25:in `call'
+rack (2.0.7) lib/rack/head.rb:12:in `call'
+actionpack (5.2.3) lib/action_dispatch/http/content_security_policy.rb:18:in `call'
+rack (2.0.7) lib/rack/session/abstract/id.rb:232:in `context'
+rack (2.0.7) lib/rack/session/abstract/id.rb:226:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/cookies.rb:670:in `call'
+activerecord (5.2.3) lib/active_record/migration.rb:559:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+activesupport (5.2.3) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (5.2.3) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:61:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/method_override.rb:22:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+rack-cors (1.0.3) lib/rack/cors.rb:95:in `call'
+railties (5.2.3) lib/rails/engine.rb:524:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/users/23.json" for ::1 at 2019-05-14 23:18:28 +1000
+Processing by UsersController#show as JSON
+  Parameters: {"id"=>"23"}
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 23], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:67
+  Rendering users/show.json.jbuilder
+  Rendered users/_user.json.jbuilder (0.9ms)
+  Rendered users/show.json.jbuilder (11.6ms)
+Completed 200 OK in 20ms (Views: 16.0ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/rails/info" for ::1 at 2019-05-14 23:19:52 +1000
+Processing by Rails::InfoController#index as HTML
+Redirected to http://localhost:3000/rails/info/routes
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/rails/info/routes" for ::1 at 2019-05-14 23:19:52 +1000
+Processing by Rails::InfoController#routes as HTML
+  Rendering /Users/thomashexton/.rvm/gems/ruby-2.6.2/gems/railties-5.2.3/lib/rails/templates/rails/info/routes.html.erb within layouts/application
+  Rendered collection of /Users/thomashexton/.rvm/gems/ruby-2.6.2/gems/actionpack-5.2.3/lib/action_dispatch/middleware/templates/routes/_route.html.erb [16 times] (21.7ms)
+  Rendered /Users/thomashexton/.rvm/gems/ruby-2.6.2/gems/actionpack-5.2.3/lib/action_dispatch/middleware/templates/routes/_table.html.erb (7.6ms)
+  Rendered /Users/thomashexton/.rvm/gems/ruby-2.6.2/gems/railties-5.2.3/lib/rails/templates/rails/info/routes.html.erb within layouts/application (38.4ms)
+Completed 200 OK in 50ms (Views: 45.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/23" for ::1 at 2019-05-14 23:20:05 +1000
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"23"}
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 23], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:67
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (6.0ms)
+Completed 500 Internal Server Error in 13ms (ActiveRecord: 1.1ms)
+
+
+  
+ActionView::Template::Error (undefined method `name' for nil:NilClass):
+    27: 
+    28: <p>
+    29:   <strong>Master:</strong>
+    30:   <%= @user.master.name %>
+    31: </p>
+    32: 
+    33: <p>
+  
+app/views/users/show.html.erb:30:in `_app_views_users_show_html_erb___2833917007426563833_70325678470920'
+Started GET "/users/23/edit" for ::1 at 2019-05-14 23:30:17 +1000
+Processing by UsersController#edit as HTML
+  Parameters: {"id"=>"23"}
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 23], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:67
+  Rendering users/edit.html.erb within layouts/application
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT "masters"."name", "masters"."id" FROM "masters"[0m
+  ↳ app/views/users/_form.html.erb:41
+  Rendered users/_form.html.erb (17.4ms)
+  Rendered users/edit.html.erb within layouts/application (19.6ms)
+Completed 200 OK in 98ms (Views: 36.4ms | ActiveRecord: 40.4ms)
+
+
+Started GET "/users" for ::1 at 2019-05-14 23:30:20 +1000
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (25.5ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:19
+  Rendered users/index.html.erb within layouts/application (29.4ms)
+Completed 200 OK in 63ms (Views: 33.9ms | ActiveRecord: 25.5ms)
+
+
+Started GET "/users/23" for ::1 at 2019-05-14 23:30:22 +1000
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"23"}
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 23], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:67
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (5.0ms)
+Completed 500 Internal Server Error in 12ms (ActiveRecord: 1.1ms)
+
+
+  
+ActionView::Template::Error (undefined method `name' for nil:NilClass):
+    37: 
+    38: <p>
+    39:   <strong>Master:</strong>
+    40:   <%= @user.master.name %>
+    41: </p>
+    42: 
+    43: <%= link_to 'Masters', masters_path %>
+  
+app/views/users/show.html.erb:40:in `_app_views_users_show_html_erb___2833917007426563833_70325678159720'
+Started GET "/users" for ::1 at 2019-05-14 23:30:26 +1000
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (2.4ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:19
+  Rendered users/index.html.erb within layouts/application (9.1ms)
+Completed 200 OK in 42ms (Views: 37.0ms | ActiveRecord: 2.4ms)
+
+
+Started GET "/masters" for ::1 at 2019-05-14 23:30:52 +1000
+Processing by MastersController#index as HTML
+  Rendering masters/index.html.erb within layouts/application
+  [1m[36mMaster Load (0.7ms)[0m  [1m[34mSELECT "masters".* FROM "masters"[0m
+  ↳ app/views/masters/index.html.erb:17
+  Rendered masters/index.html.erb within layouts/application (47.7ms)
+Completed 500 Internal Server Error in 52ms (ActiveRecord: 30.8ms)
+
+
+  
+ActionView::Template::Error (undefined method `slave_id' for #<Master:0x00007febede30ae0>):
+    18:       <tr>
+    19:         <td><%= master.name %></td>
+    20:         <td><%= master.password_digest %></td>
+    21:         <td><%= master.slave_id %></td>
+    22:         <td><%= master.admin %></td>
+    23:         <td><%= link_to 'Show', master %></td>
+    24:         <td><%= link_to 'Edit', edit_master_path(master) %></td>
+  
+app/views/masters/index.html.erb:21:in `block in _app_views_masters_index_html_erb__3636017446188564374_70325665701120'
+app/views/masters/index.html.erb:17:in `_app_views_masters_index_html_erb__3636017446188564374_70325665701120'
+Started GET "/masters" for ::1 at 2019-05-14 23:31:39 +1000
+Processing by MastersController#index as HTML
+  Rendering masters/index.html.erb within layouts/application
+  [1m[36mMaster Load (25.5ms)[0m  [1m[34mSELECT "masters".* FROM "masters"[0m
+  ↳ app/views/masters/index.html.erb:17
+  Rendered masters/index.html.erb within layouts/application (59.5ms)
+Completed 500 Internal Server Error in 69ms (ActiveRecord: 36.8ms)
+
+
+  
+ActionView::Template::Error (undefined method `slave_id' for #<Master:0x00007febf3208028>):
+    18:       <tr>
+    19:         <td><%= master.name %></td>
+    20:         <td><%= master.password_digest %></td>
+    21:         <td><%= master.slave_id %></td>
+    22:         <td><%= master.admin %></td>
+    23:         <td><%= link_to 'Show', master %></td>
+    24:         <td><%= link_to 'Edit', edit_master_path(master) %></td>
+  
+app/views/masters/index.html.erb:21:in `block in _app_views_masters_index_html_erb__3636017446188564374_70325686386900'
+app/views/masters/index.html.erb:17:in `_app_views_masters_index_html_erb__3636017446188564374_70325686386900'
+Started GET "/masters" for ::1 at 2019-05-14 23:32:47 +1000
+Processing by MastersController#index as HTML
+  Rendering masters/index.html.erb within layouts/application
+  [1m[36mMaster Load (20.4ms)[0m  [1m[34mSELECT "masters".* FROM "masters"[0m
+  ↳ app/views/masters/index.html.erb:17
+  Rendered masters/index.html.erb within layouts/application (30.2ms)
+Completed 500 Internal Server Error in 34ms (ActiveRecord: 20.4ms)
+
+
+  
+ActionView::Template::Error (undefined method `slave_id' for #<Master:0x00007febedea9f58>):
+    18:       <tr>
+    19:         <td><%= master.name %></td>
+    20:         <td><%= master.password_digest %></td>
+    21:         <!-- <td><%= master.slave_id %></td> -->
+    22:         <td><%= master.admin %></td>
+    23:         <td><%= link_to 'Show', master %></td>
+    24:         <td><%= link_to 'Edit', edit_master_path(master) %></td>
+  
+app/views/masters/index.html.erb:21:in `block in _app_views_masters_index_html_erb__3636017446188564374_70325647639060'
+app/views/masters/index.html.erb:17:in `_app_views_masters_index_html_erb__3636017446188564374_70325647639060'
+Started GET "/masters" for ::1 at 2019-05-14 23:33:20 +1000
+Processing by MastersController#index as HTML
+  Rendering masters/index.html.erb within layouts/application
+  [1m[36mMaster Load (0.6ms)[0m  [1m[34mSELECT "masters".* FROM "masters"[0m
+  ↳ app/views/masters/index.html.erb:17
+  Rendered masters/index.html.erb within layouts/application (12.4ms)
+Completed 500 Internal Server Error in 16ms (ActiveRecord: 0.6ms)
+
+
+  
+ActionView::Template::Error (undefined method `slave_id' for #<Master:0x00007febf38e91a8>):
+    18:       <tr>
+    19:         <td><%= master.name %></td>
+    20:         <td><%= master.password_digest %></td>
+    21:         <!-- <td><%= master.slave_id %></td> -->
+    22:         <td><%= master.admin %></td>
+    23:         <td><%= link_to 'Show', master %></td>
+    24:         <td><%= link_to 'Edit', edit_master_path(master) %></td>
+  
+app/views/masters/index.html.erb:21:in `block in _app_views_masters_index_html_erb__3636017446188564374_70325667880100'
+app/views/masters/index.html.erb:17:in `_app_views_masters_index_html_erb__3636017446188564374_70325667880100'
+Started GET "/masters" for ::1 at 2019-05-14 23:33:26 +1000
+Processing by MastersController#index as HTML
+  Rendering masters/index.html.erb within layouts/application
+  [1m[36mMaster Load (0.9ms)[0m  [1m[34mSELECT "masters".* FROM "masters"[0m
+  ↳ app/views/masters/index.html.erb:17
+  Rendered masters/index.html.erb within layouts/application (13.3ms)
+Completed 500 Internal Server Error in 18ms (ActiveRecord: 0.9ms)
+
+
+  
+ActionView::Template::Error (undefined method `slave_id' for #<Master:0x00007febedea3720>):
+    18:       <tr>
+    19:         <td><%= master.name %></td>
+    20:         <td><%= master.password_digest %></td>
+    21:         <!-- <td><%= master.slave_id %></td> -->
+    22:         <td><%= master.admin %></td>
+    23:         <td><%= link_to 'Show', master %></td>
+    24:         <td><%= link_to 'Edit', edit_master_path(master) %></td>
+  
+app/views/masters/index.html.erb:21:in `block in _app_views_masters_index_html_erb__3636017446188564374_70325647628960'
+app/views/masters/index.html.erb:17:in `_app_views_masters_index_html_erb__3636017446188564374_70325647628960'
+Started GET "/masters" for ::1 at 2019-05-14 23:33:30 +1000
+Processing by MastersController#index as HTML
+  Rendering masters/index.html.erb within layouts/application
+  [1m[36mMaster Load (0.6ms)[0m  [1m[34mSELECT "masters".* FROM "masters"[0m
+  ↳ app/views/masters/index.html.erb:17
+  Rendered masters/index.html.erb within layouts/application (3.7ms)
+Completed 200 OK in 28ms (Views: 25.0ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/masters" for ::1 at 2019-05-14 23:33:53 +1000
+Processing by MastersController#index as HTML
+  Rendering masters/index.html.erb within layouts/application
+  [1m[36mMaster Load (0.6ms)[0m  [1m[34mSELECT "masters".* FROM "masters"[0m
+  ↳ app/views/masters/index.html.erb:16
+  Rendered masters/index.html.erb within layouts/application (4.5ms)
+Completed 200 OK in 56ms (Views: 54.0ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/masters" for ::1 at 2019-05-14 23:34:07 +1000
+Processing by MastersController#index as HTML
+  Rendering masters/index.html.erb within layouts/application
+  [1m[36mMaster Load (0.5ms)[0m  [1m[34mSELECT "masters".* FROM "masters"[0m
+  ↳ app/views/masters/index.html.erb:16
+  Rendered masters/index.html.erb within layouts/application (3.5ms)
+Completed 200 OK in 32ms (Views: 30.1ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/masters" for ::1 at 2019-05-14 23:34:18 +1000
+Processing by MastersController#index as HTML
+  Rendering masters/index.html.erb within layouts/application
+  [1m[36mMaster Load (0.5ms)[0m  [1m[34mSELECT "masters".* FROM "masters"[0m
+  ↳ app/views/masters/index.html.erb:16
+  Rendered masters/index.html.erb within layouts/application (3.3ms)
+Completed 200 OK in 33ms (Views: 30.9ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/masters" for ::1 at 2019-05-14 23:34:33 +1000
+Processing by MastersController#index as HTML
+  Rendering masters/index.html.erb within layouts/application
+  [1m[36mMaster Load (0.7ms)[0m  [1m[34mSELECT "masters".* FROM "masters"[0m
+  ↳ app/views/masters/index.html.erb:16
+  Rendered masters/index.html.erb within layouts/application (4.4ms)
+Completed 200 OK in 39ms (Views: 36.4ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/masters/new" for ::1 at 2019-05-14 23:41:26 +1000
+Processing by MastersController#new as HTML
+  Rendering masters/new.html.erb within layouts/application
+  Rendered masters/_form.html.erb (3.0ms)
+  Rendered masters/new.html.erb within layouts/application (4.8ms)
+Completed 200 OK in 22ms (Views: 20.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/masters" for ::1 at 2019-05-14 23:42:00 +1000
+Processing by MastersController#index as HTML
+  Rendering masters/index.html.erb within layouts/application
+  [1m[36mMaster Load (1.6ms)[0m  [1m[34mSELECT "masters".* FROM "masters"[0m
+  ↳ app/views/masters/index.html.erb:16
+  Rendered masters/index.html.erb within layouts/application (6.4ms)
+Completed 200 OK in 41ms (Views: 37.4ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/masters/11" for ::1 at 2019-05-14 23:42:01 +1000
+Processing by MastersController#show as HTML
+  Parameters: {"id"=>"11"}
+  [1m[36mMaster Load (0.4ms)[0m  [1m[34mSELECT  "masters".* FROM "masters" WHERE "masters"."id" = $1 LIMIT $2[0m  [["id", 11], ["LIMIT", 1]]
+  ↳ app/controllers/masters_controller.rb:67
+  Rendering masters/show.html.erb within layouts/application
+  [1m[36mUser Load (2.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."master_id" = $1[0m  [["master_id", 11]]
+  ↳ app/views/masters/show.html.erb:19
+  Rendered masters/show.html.erb within layouts/application (55.0ms)
+Completed 200 OK in 128ms (Views: 41.6ms | ActiveRecord: 81.6ms)
+
+
+Started GET "/masters/11/edit" for ::1 at 2019-05-14 23:42:03 +1000
+Processing by MastersController#edit as HTML
+  Parameters: {"id"=>"11"}
+  [1m[36mMaster Load (23.8ms)[0m  [1m[34mSELECT  "masters".* FROM "masters" WHERE "masters"."id" = $1 LIMIT $2[0m  [["id", 11], ["LIMIT", 1]]
+  ↳ app/controllers/masters_controller.rb:67
+  Rendering masters/edit.html.erb within layouts/application
+  Rendered masters/_form.html.erb (4.0ms)
+  Rendered masters/edit.html.erb within layouts/application (7.3ms)
+Completed 200 OK in 57ms (Views: 30.1ms | ActiveRecord: 23.8ms)
+
+
+Started GET "/masters" for ::1 at 2019-05-14 23:43:04 +1000
+Processing by MastersController#index as HTML
+  Rendering masters/index.html.erb within layouts/application
+  [1m[36mMaster Load (0.8ms)[0m  [1m[34mSELECT "masters".* FROM "masters"[0m
+  ↳ app/views/masters/index.html.erb:16
+  Rendered masters/index.html.erb within layouts/application (4.2ms)
+Completed 200 OK in 28ms (Views: 25.7ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/masters" for ::1 at 2019-05-14 23:43:12 +1000
+Processing by MastersController#index as HTML
+  Rendering masters/index.html.erb within layouts/application
+  [1m[36mMaster Load (0.7ms)[0m  [1m[34mSELECT "masters".* FROM "masters"[0m
+  ↳ app/views/masters/index.html.erb:16
+  Rendered masters/index.html.erb within layouts/application (5.4ms)
+Completed 200 OK in 31ms (Views: 28.9ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/users" for ::1 at 2019-05-14 23:43:13 +1000
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (2.5ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:19
+  Rendered users/index.html.erb within layouts/application (63.0ms)
+Completed 200 OK in 90ms (Views: 42.9ms | ActiveRecord: 43.7ms)
+
+
+Started GET "/users" for ::1 at 2019-05-14 23:43:35 +1000
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (1.8ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:19
+  Rendered users/index.html.erb within layouts/application (6.5ms)
+Completed 200 OK in 40ms (Views: 34.8ms | ActiveRecord: 1.8ms)
+
+
+Started GET "/users" for ::1 at 2019-05-14 23:43:40 +1000
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:19
+  Rendered users/index.html.erb within layouts/application (4.5ms)
+Completed 200 OK in 33ms (Views: 30.8ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/users" for ::1 at 2019-05-14 23:43:46 +1000
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:19
+  Rendered users/index.html.erb within layouts/application (6.7ms)
+Completed 200 OK in 30ms (Views: 27.6ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/masters" for ::1 at 2019-05-14 23:43:48 +1000
+Processing by MastersController#index as HTML
+  Rendering masters/index.html.erb within layouts/application
+  [1m[36mMaster Load (0.6ms)[0m  [1m[34mSELECT "masters".* FROM "masters"[0m
+  ↳ app/views/masters/index.html.erb:16
+  Rendered masters/index.html.erb within layouts/application (4.2ms)
+Completed 200 OK in 34ms (Views: 31.6ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/masters" for ::1 at 2019-05-14 23:43:54 +1000
+Processing by MastersController#index as HTML
+  Rendering masters/index.html.erb within layouts/application
+  [1m[36mMaster Load (1.5ms)[0m  [1m[34mSELECT "masters".* FROM "masters"[0m
+  ↳ app/views/masters/index.html.erb:16
+  Rendered masters/index.html.erb within layouts/application (5.5ms)
+Completed 200 OK in 34ms (Views: 30.7ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/masters/11" for ::1 at 2019-05-14 23:44:00 +1000
+Processing by MastersController#show as HTML
+  Parameters: {"id"=>"11"}
+  [1m[36mMaster Load (2.3ms)[0m  [1m[34mSELECT  "masters".* FROM "masters" WHERE "masters"."id" = $1 LIMIT $2[0m  [["id", 11], ["LIMIT", 1]]
+  ↳ app/controllers/masters_controller.rb:67
+  Rendering masters/show.html.erb within layouts/application
+  [1m[36mUser Load (19.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."master_id" = $1[0m  [["master_id", 11]]
+  ↳ app/views/masters/show.html.erb:19
+  Rendered masters/show.html.erb within layouts/application (23.0ms)
+Completed 200 OK in 57ms (Views: 29.5ms | ActiveRecord: 21.9ms)
+
+
+Started GET "/masters/11/edit" for ::1 at 2019-05-14 23:44:03 +1000
+Processing by MastersController#edit as HTML
+  Parameters: {"id"=>"11"}
+  [1m[36mMaster Load (4.1ms)[0m  [1m[34mSELECT  "masters".* FROM "masters" WHERE "masters"."id" = $1 LIMIT $2[0m  [["id", 11], ["LIMIT", 1]]
+  ↳ app/controllers/masters_controller.rb:67
+  Rendering masters/edit.html.erb within layouts/application
+  Rendered masters/_form.html.erb (6.6ms)
+  Rendered masters/edit.html.erb within layouts/application (9.4ms)
+Completed 200 OK in 69ms (Views: 59.4ms | ActiveRecord: 4.1ms)
+
+
+Started GET "/masters" for ::1 at 2019-05-14 23:44:28 +1000
+Processing by MastersController#index as HTML
+  Rendering masters/index.html.erb within layouts/application
+  [1m[36mMaster Load (0.6ms)[0m  [1m[34mSELECT "masters".* FROM "masters"[0m
+  ↳ app/views/masters/index.html.erb:16
+  Rendered masters/index.html.erb within layouts/application (4.3ms)
+Completed 200 OK in 34ms (Views: 32.1ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/users" for ::1 at 2019-05-14 23:44:29 +1000
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (27.7ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:19
+  Rendered users/index.html.erb within layouts/application (32.4ms)
+Completed 200 OK in 65ms (Views: 33.6ms | ActiveRecord: 27.7ms)
+
+
+Started GET "/users/23/edit" for ::1 at 2019-05-14 23:44:32 +1000
+Processing by UsersController#edit as HTML
+  Parameters: {"id"=>"23"}
+  [1m[36mUser Load (10.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 23], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:67
+  Rendering users/edit.html.erb within layouts/application
+  [1m[35m (20.4ms)[0m  [1m[34mSELECT "masters"."name", "masters"."id" FROM "masters"[0m
+  ↳ app/views/users/_form.html.erb:41
+  Rendered users/_form.html.erb (70.8ms)
+  Rendered users/edit.html.erb within layouts/application (73.4ms)
+Completed 200 OK in 116ms (Views: 80.2ms | ActiveRecord: 30.8ms)
+
+
+Started GET "/users" for ::1 at 2019-05-14 23:44:38 +1000
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (22.2ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:19
+  Rendered users/index.html.erb within layouts/application (37.7ms)
+Completed 200 OK in 75ms (Views: 49.2ms | ActiveRecord: 22.2ms)
+
+
+Started GET "/users/new" for ::1 at 2019-05-14 23:44:39 +1000
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "masters"."name", "masters"."id" FROM "masters"[0m
+  ↳ app/views/users/_form.html.erb:41
+  Rendered users/_form.html.erb (8.0ms)
+  Rendered users/new.html.erb within layouts/application (9.5ms)
+Completed 200 OK in 37ms (Views: 33.4ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/users" for ::1 at 2019-05-14 23:46:22 +1000
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (24.8ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:19
+  Rendered users/index.html.erb within layouts/application (30.7ms)
+Completed 200 OK in 62ms (Views: 33.8ms | ActiveRecord: 24.8ms)
+
+
+Started GET "/users/23/edit" for ::1 at 2019-05-14 23:46:45 +1000
+Processing by UsersController#edit as HTML
+  Parameters: {"id"=>"23"}
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 23], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:67
+  Rendering users/edit.html.erb within layouts/application
+  [1m[35m (1.8ms)[0m  [1m[34mSELECT "masters"."name", "masters"."id" FROM "masters"[0m
+  ↳ app/views/users/_form.html.erb:41
+  Rendered users/_form.html.erb (11.2ms)
+  Rendered users/edit.html.erb within layouts/application (13.4ms)
+Completed 200 OK in 46ms (Views: 40.4ms | ActiveRecord: 2.9ms)
+
+
+Started GET "/users/23" for ::1 at 2019-05-14 23:47:03 +1000
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"23"}
+  [1m[36mUser Load (25.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 23], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:67
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (6.8ms)
+Completed 500 Internal Server Error in 39ms (ActiveRecord: 25.2ms)
+
+
+  
+ActionView::Template::Error (undefined method `name' for nil:NilClass):
+    37: 
+    38: <p>
+    39:   <strong>Master:</strong>
+    40:   <%= @user.master.name %>
+    41: </p>
+    42: 
+    43: <%= link_to 'Masters', masters_path %>
+  
+app/views/users/show.html.erb:40:in `_app_views_users_show_html_erb___2833917007426563833_70325639262840'
+Started GET "/users/23/edit" for ::1 at 2019-05-14 23:47:20 +1000
+Processing by UsersController#edit as HTML
+  Parameters: {"id"=>"23"}
+  [1m[36mUser Load (4.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 23], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:67
+  Rendering users/edit.html.erb within layouts/application
+  [1m[35m (26.3ms)[0m  [1m[34mSELECT "masters"."name", "masters"."id" FROM "masters"[0m
+  ↳ app/views/users/_form.html.erb:41
+  Rendered users/_form.html.erb (34.1ms)
+  Rendered users/edit.html.erb within layouts/application (37.6ms)
+Completed 200 OK in 105ms (Views: 70.4ms | ActiveRecord: 30.8ms)
+
+
+Started GET "/users" for ::1 at 2019-05-14 23:47:25 +1000
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (23.3ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:19
+  Rendered users/index.html.erb within layouts/application (29.7ms)
+Completed 200 OK in 72ms (Views: 46.5ms | ActiveRecord: 23.3ms)
+
+
+  [1m[35m (1.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/thomashexton/.rvm/rubies/ruby-2.6.2/lib/ruby/gems/2.6.0/gems/rake-12.3.2/lib/rake/task.rb:273
+  [1m[36mMaster Load (0.9ms)[0m  [1m[34mSELECT "masters".* FROM "masters"[0m
+  ↳ db/seeds.rb:3
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:3
+  [1m[36mMaster Destroy (0.9ms)[0m  [1m[31mDELETE FROM "masters" WHERE "masters"."id" = $1[0m  [["id", 11]]
+  ↳ db/seeds.rb:3
+  [1m[35m (0.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:3
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:3
+  [1m[36mMaster Destroy (0.8ms)[0m  [1m[31mDELETE FROM "masters" WHERE "masters"."id" = $1[0m  [["id", 12]]
+  ↳ db/seeds.rb:3
+  [1m[35m (0.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:3
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:3
+  [1m[36mMaster Destroy (0.6ms)[0m  [1m[31mDELETE FROM "masters" WHERE "masters"."id" = $1[0m  [["id", 13]]
+  ↳ db/seeds.rb:3
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:3
+  [1m[35m (26.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:4
+  [1m[36mMaster Create (2.2ms)[0m  [1m[32mINSERT INTO "masters" ("name", "password_digest", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Thomas"], ["password_digest", "chicken"], ["created_at", "2019-05-14 13:47:42.982852"], ["updated_at", "2019-05-14 13:47:42.982852"]]
+  ↳ db/seeds.rb:4
+  [1m[35m (1.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:4
+  [1m[35m (0.8ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:5
+  [1m[36mMaster Create (1.3ms)[0m  [1m[32mINSERT INTO "masters" ("name", "password_digest", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Sam"], ["password_digest", "chicken"], ["created_at", "2019-05-14 13:47:42.990212"], ["updated_at", "2019-05-14 13:47:42.990212"]]
+  ↳ db/seeds.rb:5
+  [1m[35m (1.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:5
+  [1m[35m (2.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:6
+  [1m[36mMaster Create (1.3ms)[0m  [1m[32mINSERT INTO "masters" ("name", "password_digest", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Adlan"], ["password_digest", "chicken"], ["created_at", "2019-05-14 13:47:42.997591"], ["updated_at", "2019-05-14 13:47:42.997591"]]
+  ↳ db/seeds.rb:6
+  [1m[35m (1.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:6
+  [1m[36mUser Load (33.8ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ db/seeds.rb:9
+  [1m[35m (12.6ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:9
+  [1m[36mUser Destroy (0.8ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = $1[0m  [["id", 23]]
+  ↳ db/seeds.rb:9
+  [1m[35m (1.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:9
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:9
+  [1m[36mUser Destroy (0.6ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = $1[0m  [["id", 24]]
+  ↳ db/seeds.rb:9
+  [1m[35m (0.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:9
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:9
+  [1m[36mUser Destroy (0.7ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = $1[0m  [["id", 25]]
+  ↳ db/seeds.rb:9
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:9
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:9
+  [1m[36mUser Destroy (0.7ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = $1[0m  [["id", 26]]
+  ↳ db/seeds.rb:9
+  [1m[35m (0.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:9
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:9
+  [1m[36mUser Destroy (0.6ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = $1[0m  [["id", 27]]
+  ↳ db/seeds.rb:9
+  [1m[35m (0.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:9
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:9
+  [1m[36mUser Destroy (0.7ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = $1[0m  [["id", 28]]
+  ↳ db/seeds.rb:9
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:9
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:9
+  [1m[36mUser Destroy (0.7ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = $1[0m  [["id", 29]]
+  ↳ db/seeds.rb:9
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:9
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:10
+  [1m[36mUser Create (0.9ms)[0m  [1m[32mINSERT INTO "users" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "JohnsMBP"], ["created_at", "2019-05-14 13:47:43.102242"], ["updated_at", "2019-05-14 13:47:43.102242"]]
+  ↳ db/seeds.rb:10
+  [1m[35m (25.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:10
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:11
+  [1m[36mUser Create (0.8ms)[0m  [1m[32mINSERT INTO "users" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "KarensMBA"], ["created_at", "2019-05-14 13:47:43.130460"], ["updated_at", "2019-05-14 13:47:43.130460"]]
+  ↳ db/seeds.rb:11
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:11
+  [1m[35m (0.5ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:12
+  [1m[36mUser Create (0.6ms)[0m  [1m[32mINSERT INTO "users" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "ClaireMBP"], ["created_at", "2019-05-14 13:47:43.134224"], ["updated_at", "2019-05-14 13:47:43.134224"]]
+  ↳ db/seeds.rb:12
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:12
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:13
+  [1m[36mUser Create (0.6ms)[0m  [1m[32mINSERT INTO "users" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "ChrisMBP"], ["created_at", "2019-05-14 13:47:43.137513"], ["updated_at", "2019-05-14 13:47:43.137513"]]
+  ↳ db/seeds.rb:13
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:13
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:15
+  [1m[36mUser Create (0.5ms)[0m  [1m[32mINSERT INTO "users" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "CaitlinMBA"], ["created_at", "2019-05-14 13:47:43.140811"], ["updated_at", "2019-05-14 13:47:43.140811"]]
+  ↳ db/seeds.rb:15
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:15
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:17
+  [1m[36mUser Create (0.5ms)[0m  [1m[32mINSERT INTO "users" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "Ama"], ["created_at", "2019-05-14 13:47:43.143998"], ["updated_at", "2019-05-14 13:47:43.143998"]]
+  ↳ db/seeds.rb:17
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:17
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:18
+  [1m[36mUser Create (1.1ms)[0m  [1m[32mINSERT INTO "users" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "Ada"], ["created_at", "2019-05-14 13:47:43.147645"], ["updated_at", "2019-05-14 13:47:43.147645"]]
+  ↳ db/seeds.rb:18
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:18
+  [1m[35m (38.9ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:21
+  [1m[36mUser Update (1.5ms)[0m  [1m[33mUPDATE "users" SET "updated_at" = $1, "master_id" = $2 WHERE "users"."id" = $3[0m  [["updated_at", "2019-05-14 13:47:43.195658"], ["master_id", 14], ["id", 30]]
+  ↳ db/seeds.rb:21
+  [1m[35m (0.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:21
+  [1m[35m (0.5ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:21
+  [1m[36mUser Update (0.7ms)[0m  [1m[33mUPDATE "users" SET "updated_at" = $1, "master_id" = $2 WHERE "users"."id" = $3[0m  [["updated_at", "2019-05-14 13:47:43.200890"], ["master_id", 14], ["id", 31]]
+  ↳ db/seeds.rb:21
+  [1m[35m (0.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:21
+  [1m[35m (25.7ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:21
+  [1m[36mUser Update (1.0ms)[0m  [1m[33mUPDATE "users" SET "updated_at" = $1, "master_id" = $2 WHERE "users"."id" = $3[0m  [["updated_at", "2019-05-14 13:47:43.230824"], ["master_id", 14], ["id", 32]]
+  ↳ db/seeds.rb:21
+  [1m[35m (1.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:21
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:21
+  [1m[36mUser Update (0.8ms)[0m  [1m[33mUPDATE "users" SET "updated_at" = $1, "master_id" = $2 WHERE "users"."id" = $3[0m  [["updated_at", "2019-05-14 13:47:43.235370"], ["master_id", 14], ["id", 33]]
+  ↳ db/seeds.rb:21
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:21
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:22
+  [1m[36mUser Update (0.8ms)[0m  [1m[33mUPDATE "users" SET "updated_at" = $1, "master_id" = $2 WHERE "users"."id" = $3[0m  [["updated_at", "2019-05-14 13:47:43.238955"], ["master_id", 15], ["id", 34]]
+  ↳ db/seeds.rb:22
+  [1m[35m (0.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:22
+  [1m[35m (0.5ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:23
+  [1m[36mUser Update (1.7ms)[0m  [1m[33mUPDATE "users" SET "updated_at" = $1, "master_id" = $2 WHERE "users"."id" = $3[0m  [["updated_at", "2019-05-14 13:47:43.243103"], ["master_id", 16], ["id", 35]]
+  ↳ db/seeds.rb:23
+  [1m[35m (1.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:23
+  [1m[35m (0.5ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:23
+  [1m[36mUser Update (0.9ms)[0m  [1m[33mUPDATE "users" SET "updated_at" = $1, "master_id" = $2 WHERE "users"."id" = $3[0m  [["updated_at", "2019-05-14 13:47:43.249154"], ["master_id", 16], ["id", 36]]
+  ↳ db/seeds.rb:23
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:23
+Started GET "/users" for ::1 at 2019-05-14 23:47:55 +1000
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (1.4ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:19
+  Rendered users/index.html.erb within layouts/application (7.4ms)
+Completed 200 OK in 31ms (Views: 27.8ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/users/30/edit" for ::1 at 2019-05-14 23:47:57 +1000
+Processing by UsersController#edit as HTML
+  Parameters: {"id"=>"30"}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 30], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:67
+  Rendering users/edit.html.erb within layouts/application
+  [1m[35m (25.6ms)[0m  [1m[34mSELECT "masters"."name", "masters"."id" FROM "masters"[0m
+  ↳ app/views/users/_form.html.erb:41
+  Rendered users/_form.html.erb (34.1ms)
+  Rendered users/edit.html.erb within layouts/application (37.2ms)
+Completed 200 OK in 62ms (Views: 33.0ms | ActiveRecord: 26.2ms)
+
+
+Started GET "/users/30.json" for ::1 at 2019-05-14 23:49:53 +1000
+Processing by UsersController#show as JSON
+  Parameters: {"id"=>"30"}
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 30], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:67
+  Rendering users/show.json.jbuilder
+  Rendered users/_user.json.jbuilder (1.6ms)
+  Rendered users/show.json.jbuilder (3.7ms)
+Completed 200 OK in 13ms (Views: 7.6ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/users" for ::1 at 2019-05-14 23:50:27 +1000
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:19
+  Rendered users/index.html.erb within layouts/application (7.9ms)
+Completed 200 OK in 34ms (Views: 31.3ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/users" for ::1 at 2019-05-14 23:52:10 +1000
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (24.7ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:19
+  Rendered users/index.html.erb within layouts/application (29.2ms)
+Completed 200 OK in 55ms (Views: 28.4ms | ActiveRecord: 24.7ms)
+
+
+Started GET "/users" for ::1 at 2019-05-14 23:52:38 +1000
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (2.2ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:19
+  Rendered users/index.html.erb within layouts/application (7.7ms)
+Completed 200 OK in 35ms (Views: 31.5ms | ActiveRecord: 2.2ms)
+
+
+Started GET "/users" for ::1 at 2019-05-14 23:52:39 +1000
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:19
+  Rendered users/index.html.erb within layouts/application (4.0ms)
+Completed 200 OK in 26ms (Views: 23.1ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/users/30/edit" for ::1 at 2019-05-14 23:52:41 +1000
+Processing by UsersController#edit as HTML
+  Parameters: {"id"=>"30"}
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 30], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:67
+  Rendering users/edit.html.erb within layouts/application
+  [1m[35m (24.0ms)[0m  [1m[34mSELECT "masters"."name", "masters"."id" FROM "masters"[0m
+  ↳ app/views/users/_form.html.erb:46
+  Rendered users/_form.html.erb (34.3ms)
+  Rendered users/edit.html.erb within layouts/application (37.3ms)
+Completed 200 OK in 66ms (Views: 37.5ms | ActiveRecord: 24.7ms)
+
+
+Started GET "/users/30/edit" for ::1 at 2019-05-14 23:53:04 +1000
+Processing by UsersController#edit as HTML
+  Parameters: {"id"=>"30"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 30], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:67
+  Rendering users/edit.html.erb within layouts/application
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "masters"."name", "masters"."id" FROM "masters"[0m
+  ↳ app/views/users/_form.html.erb:46
+  Rendered users/_form.html.erb (7.5ms)
+  Rendered users/edit.html.erb within layouts/application (9.5ms)
+Completed 200 OK in 39ms (Views: 33.2ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/users/30/edit" for ::1 at 2019-05-14 23:53:34 +1000
+Processing by UsersController#edit as HTML
+  Parameters: {"id"=>"30"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 30], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:67
+  Rendering users/edit.html.erb within layouts/application
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "masters"."name", "masters"."id" FROM "masters"[0m
+  ↳ app/views/users/_form.html.erb:51
+  Rendered users/_form.html.erb (11.4ms)
+  Rendered users/edit.html.erb within layouts/application (13.8ms)
+Completed 200 OK in 54ms (Views: 49.8ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/users/30/edit" for ::1 at 2019-05-14 23:53:49 +1000
+Processing by UsersController#edit as HTML
+  Parameters: {"id"=>"30"}
+  [1m[36mUser Load (2.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 30], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:67
+  Rendering users/edit.html.erb within layouts/application
+  [1m[35m (15.0ms)[0m  [1m[34mSELECT "masters"."name", "masters"."id" FROM "masters"[0m
+  ↳ app/views/users/_form.html.erb:51
+  Rendered users/_form.html.erb (23.8ms)
+  Rendered users/edit.html.erb within layouts/application (25.7ms)
+Completed 200 OK in 62ms (Views: 39.5ms | ActiveRecord: 17.9ms)
+
+
+Started GET "/users/30/edit" for ::1 at 2019-05-14 23:54:40 +1000
+Processing by UsersController#edit as HTML
+  Parameters: {"id"=>"30"}
+  [1m[36mUser Load (1.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 30], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:67
+  Rendering users/edit.html.erb within layouts/application
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT "masters"."name", "masters"."id" FROM "masters"[0m
+  ↳ app/views/users/_form.html.erb:56
+  Rendered users/_form.html.erb (9.6ms)
+  Rendered users/edit.html.erb within layouts/application (12.2ms)
+Completed 200 OK in 46ms (Views: 40.2ms | ActiveRecord: 2.6ms)
+
+
+Started GET "/users/30/edit" for ::1 at 2019-05-14 23:54:46 +1000
+Processing by UsersController#edit as HTML
+  Parameters: {"id"=>"30"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 30], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:67
+  Rendering users/edit.html.erb within layouts/application
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT "masters"."name", "masters"."id" FROM "masters"[0m
+  ↳ app/views/users/_form.html.erb:56
+  Rendered users/_form.html.erb (14.0ms)
+  Rendered users/edit.html.erb within layouts/application (17.1ms)
+Completed 200 OK in 63ms (Views: 59.8ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/users/30/edit" for ::1 at 2019-05-14 23:54:53 +1000
+Processing by UsersController#edit as HTML
+  Parameters: {"id"=>"30"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 30], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:67
+  Rendering users/edit.html.erb within layouts/application
+  [1m[35m (11.1ms)[0m  [1m[34mSELECT "masters"."name", "masters"."id" FROM "masters"[0m
+  ↳ app/views/users/_form.html.erb:56
+  Rendered users/_form.html.erb (22.9ms)
+  Rendered users/edit.html.erb within layouts/application (25.3ms)
+Completed 200 OK in 53ms (Views: 37.9ms | ActiveRecord: 11.6ms)
+
+
+Started GET "/users/30/edit" for ::1 at 2019-05-14 23:55:00 +1000
+Processing by UsersController#edit as HTML
+  Parameters: {"id"=>"30"}
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 30], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:67
+  Rendering users/edit.html.erb within layouts/application
+  [1m[35m (21.2ms)[0m  [1m[34mSELECT "masters"."name", "masters"."id" FROM "masters"[0m
+  ↳ app/views/users/_form.html.erb:56
+  Rendered users/_form.html.erb (29.8ms)
+  Rendered users/edit.html.erb within layouts/application (32.3ms)
+Completed 200 OK in 61ms (Views: 36.2ms | ActiveRecord: 22.1ms)
+
+
+Started GET "/users/30/edit" for ::1 at 2019-05-14 23:55:46 +1000
+Processing by UsersController#edit as HTML
+  Parameters: {"id"=>"30"}
+  [1m[36mUser Load (5.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 30], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:67
+  Rendering users/edit.html.erb within layouts/application
+  [1m[35m (24.9ms)[0m  [1m[34mSELECT "masters"."name", "masters"."id" FROM "masters"[0m
+  ↳ app/views/users/_form.html.erb:56
+  Rendered users/_form.html.erb (32.2ms)
+  Rendered users/edit.html.erb within layouts/application (34.7ms)
+Completed 200 OK in 70ms (Views: 35.7ms | ActiveRecord: 30.1ms)
+
+
+Started GET "/users/30.json" for ::1 at 2019-05-14 23:55:49 +1000
+Processing by UsersController#show as JSON
+  Parameters: {"id"=>"30"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 30], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:67
+  Rendering users/show.json.jbuilder
+  Rendered users/_user.json.jbuilder (0.8ms)
+  Rendered users/show.json.jbuilder (2.9ms)
+Completed 200 OK in 11ms (Views: 7.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/users" for ::1 at 2019-05-14 23:56:02 +1000
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (23.9ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:19
+  Rendered users/index.html.erb within layouts/application (28.5ms)
+Completed 200 OK in 65ms (Views: 38.1ms | ActiveRecord: 23.9ms)
+
+
+Started GET "/users/31/edit" for ::1 at 2019-05-14 23:56:04 +1000
+Processing by UsersController#edit as HTML
+  Parameters: {"id"=>"31"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 31], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:67
+  Rendering users/edit.html.erb within layouts/application
+  [1m[35m (1.1ms)[0m  [1m[34mSELECT "masters"."name", "masters"."id" FROM "masters"[0m
+  ↳ app/views/users/_form.html.erb:56
+  Rendered users/_form.html.erb (10.3ms)
+  Rendered users/edit.html.erb within layouts/application (12.9ms)
+Completed 200 OK in 74ms (Views: 70.3ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/users" for ::1 at 2019-05-14 23:56:06 +1000
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (25.1ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:19
+  Rendered users/index.html.erb within layouts/application (29.2ms)
+Completed 200 OK in 53ms (Views: 26.5ms | ActiveRecord: 25.1ms)
+
+
+Started GET "/users" for ::1 at 2019-05-14 23:56:19 +1000
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (22.0ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:19
+  Rendered users/index.html.erb within layouts/application (29.8ms)
+Completed 200 OK in 63ms (Views: 37.9ms | ActiveRecord: 22.0ms)
+
+
+Started GET "/users" for ::1 at 2019-05-15 00:00:02 +1000
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:19
+  Rendered users/index.html.erb within layouts/application (3.9ms)
+Completed 200 OK in 19ms (Views: 17.1ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/users" for ::1 at 2019-05-15 00:00:22 +1000
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:22
+  Rendered users/index.html.erb within layouts/application (4.7ms)
+Completed 200 OK in 29ms (Views: 26.5ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/users/30" for ::1 at 2019-05-15 00:00:49 +1000
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"30"}
+  [1m[36mUser Load (4.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 30], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:67
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mMaster Load (1.0ms)[0m  [1m[34mSELECT  "masters".* FROM "masters" WHERE "masters"."id" = $1 LIMIT $2[0m  [["id", 14], ["LIMIT", 1]]
+  ↳ app/views/users/show.html.erb:40
+  Rendered users/show.html.erb within layouts/application (5.1ms)
+Completed 200 OK in 37ms (Views: 28.3ms | ActiveRecord: 5.2ms)
+
+
+Started GET "/users/30" for ::1 at 2019-05-15 00:01:48 +1000
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"30"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 30], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:67
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mMaster Load (0.4ms)[0m  [1m[34mSELECT  "masters".* FROM "masters" WHERE "masters"."id" = $1 LIMIT $2[0m  [["id", 14], ["LIMIT", 1]]
+  ↳ app/views/users/show.html.erb:44
+  Rendered users/show.html.erb within layouts/application (2.9ms)
+Completed 200 OK in 25ms (Views: 21.8ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/users/30" for ::1 at 2019-05-15 00:02:10 +1000
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"30"}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 30], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:67
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (1.3ms)
+Completed 500 Internal Server Error in 8ms (ActiveRecord: 0.6ms)
+
+
+  
+SyntaxError (/Users/thomashexton/Projects/project2/prnkstr-server/app/views/users/show.html.erb:49: syntax error, unexpected ensure, expecting end
+          ensure
+          ^~~~~~
+/Users/thomashexton/Projects/project2/prnkstr-server/app/views/users/show.html.erb:51: syntax error, unexpected end-of-input, expecting end):
+  
+app/views/users/show.html.erb:49: syntax error, unexpected ensure, expecting end
+app/views/users/show.html.erb:51: syntax error, unexpected end-of-input, expecting end
+Started GET "/users/30" for ::1 at 2019-05-15 00:02:15 +1000
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"30"}
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 30], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:67
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mMaster Load (18.9ms)[0m  [1m[34mSELECT  "masters".* FROM "masters" WHERE "masters"."id" = $1 LIMIT $2[0m  [["id", 14], ["LIMIT", 1]]
+  ↳ app/views/users/show.html.erb:42
+  Rendered users/show.html.erb within layouts/application (22.2ms)
+Completed 200 OK in 46ms (Views: 22.2ms | ActiveRecord: 19.6ms)
+
+
+Started GET "/users/30" for ::1 at 2019-05-15 00:02:20 +1000
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"30"}
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 30], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:67
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mMaster Load (0.4ms)[0m  [1m[34mSELECT  "masters".* FROM "masters" WHERE "masters"."id" = $1 LIMIT $2[0m  [["id", 14], ["LIMIT", 1]]
+  ↳ app/views/users/show.html.erb:42
+  Rendered users/show.html.erb within layouts/application (3.4ms)
+Completed 200 OK in 31ms (Views: 27.3ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/users/30" for ::1 at 2019-05-15 00:03:16 +1000
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"30"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 30], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:67
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (0.8ms)
+Completed 500 Internal Server Error in 6ms (ActiveRecord: 0.4ms)
+
+
+  
+SyntaxError (/Users/thomashexton/Projects/project2/prnkstr-server/app/views/users/show.html.erb:50: syntax error, unexpected ensure, expecting end
+          ensure
+          ^~~~~~
+/Users/thomashexton/Projects/project2/prnkstr-server/app/views/users/show.html.erb:52: syntax error, unexpected end-of-input, expecting end):
+  
+app/views/users/show.html.erb:50: syntax error, unexpected ensure, expecting end
+app/views/users/show.html.erb:52: syntax error, unexpected end-of-input, expecting end
+Started GET "/users/30" for ::1 at 2019-05-15 00:03:29 +1000
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"30"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 30], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:67
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (0.9ms)
+Completed 500 Internal Server Error in 6ms (ActiveRecord: 0.4ms)
+
+
+  
+SyntaxError (/Users/thomashexton/Projects/project2/prnkstr-server/app/views/users/show.html.erb:50: syntax error, unexpected ensure, expecting end
+          ensure
+          ^~~~~~
+/Users/thomashexton/Projects/project2/prnkstr-server/app/views/users/show.html.erb:52: syntax error, unexpected end-of-input, expecting end):
+  
+app/views/users/show.html.erb:50: syntax error, unexpected ensure, expecting end
+app/views/users/show.html.erb:52: syntax error, unexpected end-of-input, expecting end
+Started GET "/users/30" for ::1 at 2019-05-15 00:03:41 +1000
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"30"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 30], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:67
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mMaster Load (0.6ms)[0m  [1m[34mSELECT  "masters".* FROM "masters" WHERE "masters"."id" = $1 LIMIT $2[0m  [["id", 14], ["LIMIT", 1]]
+  ↳ app/views/users/show.html.erb:43
+  Rendered users/show.html.erb within layouts/application (4.6ms)
+Completed 200 OK in 24ms (Views: 21.6ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/users/30" for ::1 at 2019-05-15 00:04:38 +1000
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"30"}
+  [1m[36mUser Load (24.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 30], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:67
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mMaster Load (0.3ms)[0m  [1m[34mSELECT  "masters".* FROM "masters" WHERE "masters"."id" = $1 LIMIT $2[0m  [["id", 14], ["LIMIT", 1]]
+  ↳ app/views/users/show.html.erb:48
+  Rendered users/show.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 47ms (Views: 20.4ms | ActiveRecord: 24.5ms)
+
+
+Started GET "/users" for ::1 at 2019-05-15 00:04:48 +1000
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (20.4ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:22
+  Rendered users/index.html.erb within layouts/application (25.2ms)
+Completed 200 OK in 48ms (Views: 24.6ms | ActiveRecord: 20.4ms)
+
+
+Started GET "/users/30" for ::1 at 2019-05-15 00:05:03 +1000
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"30"}
+  [1m[36mUser Load (25.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 30], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:67
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mMaster Load (0.4ms)[0m  [1m[34mSELECT  "masters".* FROM "masters" WHERE "masters"."id" = $1 LIMIT $2[0m  [["id", 14], ["LIMIT", 1]]
+  ↳ app/views/users/show.html.erb:48
+  Rendered users/show.html.erb within layouts/application (4.0ms)
+Completed 200 OK in 54ms (Views: 24.7ms | ActiveRecord: 26.3ms)
+
+
+Started GET "/users" for ::1 at 2019-05-15 00:05:04 +1000
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:22
+  Rendered users/index.html.erb within layouts/application (5.5ms)
+Completed 200 OK in 26ms (Views: 23.5ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/users/30/edit" for ::1 at 2019-05-15 00:05:05 +1000
+Processing by UsersController#edit as HTML
+  Parameters: {"id"=>"30"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 30], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:67
+  Rendering users/edit.html.erb within layouts/application
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "masters"."name", "masters"."id" FROM "masters"[0m
+  ↳ app/views/users/_form.html.erb:56
+  Rendered users/_form.html.erb (6.9ms)
+  Rendered users/edit.html.erb within layouts/application (8.9ms)
+Completed 200 OK in 33ms (Views: 29.6ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/users" for ::1 at 2019-05-15 00:05:11 +1000
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:22
+  Rendered users/index.html.erb within layouts/application (5.7ms)
+Completed 200 OK in 25ms (Views: 22.5ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/users.json" for ::1 at 2019-05-15 00:05:27 +1000
+Processing by UsersController#index as JSON
+  Rendering users/index.json.jbuilder
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.json.jbuilder:1
+  Rendered users/_user.json.jbuilder (1.2ms)
+  Rendered users/_user.json.jbuilder (0.4ms)
+  Rendered users/_user.json.jbuilder (0.3ms)
+  Rendered users/_user.json.jbuilder (0.3ms)
+  Rendered users/_user.json.jbuilder (0.3ms)
+  Rendered users/_user.json.jbuilder (0.3ms)
+  Rendered users/_user.json.jbuilder (0.3ms)
+  Rendered users/index.json.jbuilder (11.8ms)
+Completed 200 OK in 17ms (Views: 14.3ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/users.json" for ::1 at 2019-05-15 00:05:42 +1000
+Processing by UsersController#index as JSON
+  Rendering users/index.json.jbuilder
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.json.jbuilder:1
+  Rendered users/_user.json.jbuilder (0.9ms)
+  Rendered users/index.json.jbuilder (3.5ms)
+Completed 500 Internal Server Error in 8ms (ActiveRecord: 0.5ms)
+
+
+  
+SyntaxError (/Users/thomashexton/Projects/project2/prnkstr-server/app/views/users/_user.json.jbuilder:1: syntax error, unexpected ':', expecting end
+... user, :id, :name, :master_id :fill_murray, :place_cage, :cu...
+...                              ^
+/Users/thomashexton/Projects/project2/prnkstr-server/app/views/users/_user.json.jbuilder:1: syntax error, unexpected ',', expecting '.' or &. or :: or '['
+...r_id :fill_murray, :place_cage, :custom_header, :custom_head...
+...                              ^):
+  
+app/views/users/_user.json.jbuilder:1: syntax error, unexpected ':', expecting end
+app/views/users/_user.json.jbuilder:1: syntax error, unexpected ',', expecting '.' or &. or :: or '['
+app/views/users/index.json.jbuilder:1:in `_app_views_users_index_json_jbuilder__1568390735951729923_70325678127600'
+Started GET "/users.json" for ::1 at 2019-05-15 00:05:47 +1000
+Processing by UsersController#index as JSON
+  Rendering users/index.json.jbuilder
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.json.jbuilder:1
+  Rendered users/_user.json.jbuilder (0.8ms)
+  Rendered users/_user.json.jbuilder (0.3ms)
+  Rendered users/_user.json.jbuilder (0.3ms)
+  Rendered users/_user.json.jbuilder (0.5ms)
+  Rendered users/_user.json.jbuilder (0.3ms)
+  Rendered users/_user.json.jbuilder (0.3ms)
+  Rendered users/_user.json.jbuilder (0.4ms)
+  Rendered users/index.json.jbuilder (11.9ms)
+Completed 200 OK in 16ms (Views: 13.4ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/users.json" for ::1 at 2019-05-15 00:06:04 +1000
+Processing by UsersController#index as JSON
+  Rendering users/index.json.jbuilder
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.json.jbuilder:1
+  Rendered users/_user.json.jbuilder (0.6ms)
+  Rendered users/_user.json.jbuilder (0.1ms)
+  Rendered users/_user.json.jbuilder (0.2ms)
+  Rendered users/_user.json.jbuilder (0.2ms)
+  Rendered users/_user.json.jbuilder (0.2ms)
+  Rendered users/_user.json.jbuilder (0.2ms)
+  Rendered users/_user.json.jbuilder (0.2ms)
+  Rendered users/index.json.jbuilder (9.8ms)
+Completed 200 OK in 14ms (Views: 12.0ms | ActiveRecord: 0.6ms)
+
+

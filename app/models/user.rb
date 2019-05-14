@@ -13,6 +13,7 @@
 #  master_id            :integer
 #  paragraph_background :string           default("")
 #  paragraph_color      :string           default("")
+#  snap                 :boolean          default(FALSE)
 #
 
 class User < ApplicationRecord

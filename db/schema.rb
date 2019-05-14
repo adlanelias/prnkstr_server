@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2019_05_14_121019) do
+ActiveRecord::Schema.define(version: 2019_05_14_125047) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -34,6 +34,7 @@ ActiveRecord::Schema.define(version: 2019_05_14_121019) do
     t.integer "master_id"
     t.string "paragraph_background", default: ""
     t.string "paragraph_color", default: ""
+    t.boolean "snap", default: false
   end
 
 end

@@ -69,6 +69,6 @@ class MastersController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def master_params
-      params.require(:master).permit(:name, :password_digest, :slave_id, :admin)
+      params.require(:master).permit(:name, :password_digest, :admin)
     end
 end
