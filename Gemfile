@@ -31,6 +31,8 @@ gem 'knock'
 
 gem 'rails_12factor', group: :production
 
+gem 'pry-rails'
+
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 

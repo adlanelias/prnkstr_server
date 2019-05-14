@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2019_05_14_005712) do
+ActiveRecord::Schema.define(version: 2019_05_14_121019) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -18,7 +18,6 @@ ActiveRecord::Schema.define(version: 2019_05_14_005712) do
   create_table "masters", force: :cascade do |t|
     t.text "name"
     t.text "password_digest"
-    t.integer "slave_id"
     t.boolean "admin"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
@@ -33,6 +32,8 @@ ActiveRecord::Schema.define(version: 2019_05_14_005712) do
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.integer "master_id"
+    t.string "paragraph_background", default: ""
+    t.string "paragraph_color", default: ""
   end
 
 end
