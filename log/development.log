@@ -4535,3 +4535,59 @@ Processing by UsersController#index as HTML
 Completed 200 OK in 24ms (Views: 22.4ms | ActiveRecord: 0.6ms)
 
 
+Started GET "/" for ::1 at 2019-05-15 15:23:31 +1000
+  [1m[35m (1.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/thomashexton/.rvm/gems/ruby-2.6.2/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /Users/thomashexton/.rvm/gems/ruby-2.6.2/gems/railties-5.2.3/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/thomashexton/.rvm/gems/ruby-2.6.2/gems/railties-5.2.3/lib/rails/templates/rails/welcome/index.html.erb (4.8ms)
+Completed 200 OK in 21ms (Views: 10.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/masters/38.json" for ::1 at 2019-05-15 15:23:43 +1000
+Processing by MastersController#show as JSON
+  Parameters: {"id"=>"38"}
+  [1m[36mMaster Load (1.4ms)[0m  [1m[34mSELECT  "masters".* FROM "masters" WHERE "masters"."id" = $1 LIMIT $2[0m  [["id", 38], ["LIMIT", 1]]
+  ↳ app/controllers/masters_controller.rb:75
+Completed 404 Not Found in 37ms (ActiveRecord: 16.3ms)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Master with 'id'=38):
+  
+app/controllers/masters_controller.rb:75:in `set_master'
+Started GET "/masters/" for ::1 at 2019-05-15 15:23:55 +1000
+Processing by MastersController#index as HTML
+  Rendering masters/index.html.erb within layouts/application
+  [1m[36mMaster Load (0.7ms)[0m  [1m[34mSELECT "masters".* FROM "masters"[0m
+  ↳ app/views/masters/index.html.erb:16
+  Rendered masters/index.html.erb within layouts/application (31.2ms)
+Completed 200 OK in 265ms (Views: 261.1ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/masters/14" for ::1 at 2019-05-15 15:23:58 +1000
+Processing by MastersController#show as HTML
+  Parameters: {"id"=>"14"}
+  [1m[36mMaster Load (0.6ms)[0m  [1m[34mSELECT  "masters".* FROM "masters" WHERE "masters"."id" = $1 LIMIT $2[0m  [["id", 14], ["LIMIT", 1]]
+  ↳ app/controllers/masters_controller.rb:75
+  [1m[36mCACHE Master Load (0.0ms)[0m  [1m[34mSELECT  "masters".* FROM "masters" WHERE "masters"."id" = $1 LIMIT $2[0m  [["id", 14], ["LIMIT", 1]]
+  ↳ app/controllers/masters_controller.rb:13
+  Rendering masters/show.html.erb within layouts/application
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."master_id" = $1[0m  [["master_id", 14]]
+  ↳ app/views/masters/show.html.erb:19
+  Rendered masters/show.html.erb within layouts/application (31.0ms)
+Completed 200 OK in 69ms (Views: 40.6ms | ActiveRecord: 8.4ms)
+
+
+Started GET "/masters/14.json" for ::1 at 2019-05-15 15:24:04 +1000
+Processing by MastersController#show as JSON
+  Parameters: {"id"=>"14"}
+  [1m[36mMaster Load (0.7ms)[0m  [1m[34mSELECT  "masters".* FROM "masters" WHERE "masters"."id" = $1 LIMIT $2[0m  [["id", 14], ["LIMIT", 1]]
+  ↳ app/controllers/masters_controller.rb:75
+  [1m[36mCACHE Master Load (0.0ms)[0m  [1m[34mSELECT  "masters".* FROM "masters" WHERE "masters"."id" = $1 LIMIT $2[0m  [["id", 14], ["LIMIT", 1]]
+  ↳ app/controllers/masters_controller.rb:13
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."master_id" = $1[0m  [["master_id", 14]]
+  ↳ app/controllers/masters_controller.rb:18
+Completed 200 OK in 10ms (Views: 4.8ms | ActiveRecord: 1.3ms)
+
+

@@ -10,6 +10,14 @@ class MastersController < ApplicationController
   # GET /masters/1
   # GET /masters/1.json
   def show
+	master = Master.find params[:id]
+	users = master.users
+
+	respond_to do |format|
+		format.html { render :show }
+  		format.json { render :json => {:master => master, :users => users } }
+  	end
+
   end
 
   # GET /masters/new
