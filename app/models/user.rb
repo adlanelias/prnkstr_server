@@ -17,6 +17,7 @@
 #
 
 class User < ApplicationRecord
+
   belongs_to :master, :optional => true
 
 end
