@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2019_05_14_125047) do
+ActiveRecord::Schema.define(version: 2019_05_16_132653) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -35,6 +35,19 @@ ActiveRecord::Schema.define(version: 2019_05_14_125047) do
     t.string "paragraph_background", default: ""
     t.string "paragraph_color", default: ""
     t.boolean "snap", default: false
+    t.boolean "stranger_things", default: false
+    t.boolean "page_flip", default: false
+    t.boolean "otherside", default: false
+    t.boolean "marquee", default: false
+    t.string "marquee_element", default: "body"
+    t.integer "marquee_speed", default: 100
+    t.boolean "unicorn_mode", default: false
+    t.boolean "word_swapper", default: false
+    t.string "existing_word", default: ""
+    t.string "new_word", default: ""
+    t.boolean "hidden_video", default: false
+    t.text "hidden_video_url", default: "https://www.youtube.com/embed/oHg5SJYRHA0?autoplay=1"
+    t.string "hidden_video_element", default: "p"
   end
 
 end

@@ -5,16 +5,30 @@
 <table>
   <thead>
     <tr>
-      <th>Name |</th>
-      <th>Fill Murray |</th>
-      <th>Place Cage |</th>
-      <th>Custom Header |</th>
-      <th>Custom Header Text |</th>
-      <th>Paragraph Background |</th>
-      <th>Paragraph Color |</th>
-      <th>Snap |</th>
-	  <th>Master</th>
-      <!-- <th colspan="4"></th> -->
+      <th>Name</th>
+      <th>User ID</th>
+	  <th>Master ID</th>
+      <th>Fill Murray</th>
+      <th>Place Cage</th>
+      <th>Custom Header</th>
+      <th>Custom Header Text</th>
+      <th>Paragraph Background</th>
+      <th>Paragraph Color</th>
+      <th>Snap</th>
+      <th>Stranger Things</th>
+      <th>Page Flip</th>
+      <th>Otherside</th>
+      <th>Marquee</th>
+      <th>Marquee Element</th>
+      <th>Marquee Speed</th>
+      <th>Unicorn Mode</th>
+      <th>Word Swapper</th>
+      <th>Existing Word</th>
+	  <th>New Word</th>
+      <th>Hidden Video</th>
+      <th>Hidden Video URL</th>
+      <th>Hidden Video Element</th>
+      <th colspan="3"></th>
     </tr>
   </thead>
 
@@ -22,6 +36,8 @@
     <% @users.each do |user| %>
       <tr>
         <td><%= user.name %></td>
+        <td><%= user.id %></td>
+		<td><%= user.master_id %></td>
         <td><%= user.fill_murray %></td>
         <td><%= user.place_cage %></td>
         <td><%= user.custom_header %></td>
@@ -29,9 +45,21 @@
         <td><%= user.paragraph_background %></td>
         <td><%= user.paragraph_color %></td>
         <td><%= user.snap %></td>
-		<td><%= user.master_id %></td>
+        <td><%= user.stranger_things%></td>
+        <td><%= user.page_flip%></td>
+        <td><%= user.otherside%></td>
+        <td><%= user.marquee%></td>
+        <td><%= user.marquee_element%></td>
+        <td><%= user.marquee_speed%></td>
+        <td><%= user.unicorn_mode%></td>
+        <td><%= user.word_swapper%></td>
+        <td><%= user.existing_word%></td>
+        <td><%= user.new_word%></td>
+        <td><%= user.hidden_video%></td>
+        <td><%= user.hidden_video_url%></td>
+        <td><%= user.hidden_video_element%></td>
         <td><%= link_to 'Show', user %></td>
-        <td><%= link_to 'Edit', edit_user_path(user) %></td>
+        <td><%= link_to 'Edit', edit_user_path( user ) %></td>
         <td><%= link_to 'Destroy', user, method: :delete, data: { confirm: 'Are you sure?' } %></td>
       </tr>
     <% end %>
