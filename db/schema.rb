@@ -46,7 +46,7 @@ ActiveRecord::Schema.define(version: 2019_05_16_132653) do
     t.string "existing_word", default: ""
     t.string "new_word", default: ""
     t.boolean "hidden_video", default: false
-    t.text "hidden_video_url", default: "https://www.youtube.com/embed/oHg5SJYRHA0?autoplay=1"
+    t.text "hidden_video_url", default: "oHg5SJYRHA0"
     t.string "hidden_video_element", default: "p"
   end
 
